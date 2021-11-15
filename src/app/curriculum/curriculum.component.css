@@ -1,0 +1,13 @@
+/* button {
+  width: 30%;
+  margin: 2px;
+  text-align: center;
+} */
+table, th, td {
+  border: 1px solid black;
+}
+
+.text-center{
+  text-align: center;
+}
+

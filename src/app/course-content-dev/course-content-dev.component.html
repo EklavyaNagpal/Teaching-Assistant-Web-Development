@@ -1,0 +1,493 @@
+<div class="container-fluid ">
+  <div class="row">
+    <div class="col-md-2 verticalLine">
+        <button (click)="is13()" class="btn btn-danger">Add Curriculum</button>
+        <button (click)="is122()" class="btn btn-success">Add Course</button>
+        <button (click)="is11()" class="btn btn-warning">Add Concept</button>
+        <button (click)="is14()" class="btn btn-primary">Add Sub -Concepts</button>
+        <button (click)="is100()" class="btn btn-warning">View all Curriculum</button>
+      <!-- <button (click)="is11()" class="btn btn-danger">Create or edit Concepts</button> -->
+      <!-- <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Concepts
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+          <a class="dropdown-item" (click)="is11()">Concept Details</a>
+          <div *ngFor="let iddd of conc">
+            <a class="dropdown-item" (click)="is125(iddd.CN_id)">{{iddd.CN_id}}</a>
+            &nbsp;&nbsp;
+            <a class="dropdown-item">{{iddd.CN_Name}}</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <button (click)="is122()" class= "btn btn-warning">Create or edit Courses</button> -->
+
+      <!-- <div class="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Courses
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" (click)="is122()">Courses Details</a>
+          <div *ngFor="let idd of cou">
+            <a class="dropdown-item" (click)="is123(idd.CO_id)">{{idd.CO_id}}</a>
+             &nbsp;&nbsp;
+            <a class="dropdown-item">{{idd.CO_Name}}</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="dropdown">
+          <button class="btn btn-primary btn-lg dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Curriculum
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  
+            <div *ngFor="let value of tabledata1">
+              <a class="dropdown-item" (click)="aloo(value.CU_id)">{{value.CU_Name}}</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn btn-warning btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Courses
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    
+              <div *ngFor="let value of cou1">
+      
+                <a class="dropdown-item" (click)="aloo1(value.CO_id)">{{value.CO_Name}}</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </div>
+            </div>
+          </div>
+
+
+          <div class="dropdown">
+              <button class="btn btn-success btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Concept
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      
+                <div *ngFor="let value of cou2">
+                  
+                  <a class="dropdown-item" (click)="aloo2(value.CN_id)" >{{value.CN_Name}}</a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-danger btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Subconcept
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        
+                  <div *ngFor="let value of cou3">
+                    
+                    <a class="dropdown-item" (click)="is126()" >{{value.SC_Name}}</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </div>
+                </div>
+              </div> -->
+
+      <!-- <div class="dropdown">
+        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Curriculum
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+          <a class="dropdown-item" (click)="is13()">Curriculum Details</a>
+          <div *ngFor="let id of prod">
+            <a class="dropdown-item" (click)="is12(id.CU_id)">{{id.CU_id}}</a>
+            &nbsp;&nbsp;
+            <a class="dropdown-item">{{id.CU_Name}}</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+
+ -->
+
+          <!-- <a class="dropdown-item" (click)="is12(64)" >64</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            -->
+        <!-- </div>
+      </div> -->
+      <!-- <button (click)="is13()" mat-button>Create or edit Curriculum</button> -->
+
+
+      <!-- <button (click)="is14()" class="btn btn-danger">Create Sub -Concepts</button> -->
+
+      <!-- <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          View Sub-Concepts
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+          <a class="dropdown-item" (click)="is11()">Concept Details</a>
+          <div *ngFor="let iddd of conc">
+            <a class="dropdown-item" (click)="is125(iddd.CN_id)">{{iddd.CN_id}}</a>
+             &nbsp;&nbsp; 
+            <a class="dropdown-item">{{iddd.CN_Name}}</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+      </div> -->
+      <!-- <button (click)="is125()" class="btn btn-primary">View Sub -Concepts</button> -->
+
+
+      <button (click)="is15()" class="btn btn-success">Create or edit Quiz or test</button>
+
+
+      <button (click)="is16()" class="btn btn-danger">Create or edit Session plan</button>
+
+
+
+      <!-- <button (click)="is17()" class="btn btn-primary">View & Analyse Course</button> -->
+
+
+    </div>
+
+
+    <!-- <form>
+    <div class="col-md-2 verticalLine">
+      <div class="dropdown">
+        <button class="btn btn-primary btn-lg dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Curriculum
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+         
+          <div *ngFor="let value of tabledata1">
+            <a class="dropdown-item" (click)="aloo(value.CU_id)">{{value.CU_Name}}</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 verticalLine">
+      <div class="dropdown">
+        <button class="btn btn-warning btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Courses
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+          <div *ngFor="let value of cou1">
+  
+            <a class="dropdown-item" (click)="aloo1(value.CO_id)">{{value.CO_Name}}</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2 verticalLine">
+      <div class="dropdown">
+        <button class="btn btn-success btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Concept
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+          <div *ngFor="let value of cou2">
+            
+            <a class="dropdown-item" (click)="aloo2(value.CN_id)" >{{value.CN_Name}}</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2 verticalLine">
+      <div class="dropdown">
+          <button class="btn btn-danger btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Subconcept
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  
+            <div *ngFor="let value of cou3">
+              
+              <a class="dropdown-item" (click)="is126()" >{{value.SC_Name}}</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </form> -->
+      <!-- <div class="col-md-2 verticalLine"> -->
+
+      <app-concept *ngIf="appcon"></app-concept>
+      <app-courses *ngIf="appcourse"></app-courses>
+      <app-curriculum *ngIf="appcur"></app-curriculum>
+      <app-subconcept *ngIf="appsub"></app-subconcept>
+      <app-sessionplan *ngIf="appses"></app-sessionplan>
+      <div class="text-center">
+      <div *ngIf="s100">
+        <ol *ngFor="let f of tabledata100">
+          <li (click)="is101(f.CU_id)">{{f.CU_Name}}</li>
+        </ol>
+      </div>
+      
+      <div *ngIf="s101">
+        <ol *ngFor="let f of tabledata101">
+          <li (click)="is102(f.CO_id)">{{f.CO_Name}}</li>
+        </ol>
+      </div>
+      <div *ngIf="s102">
+        <ol *ngFor="let f of tabledata102">
+          <li (click)="is103(f.CN_id)">{{f.CN_Name}}</li>
+        </ol>
+      </div>
+    </div>
+
+  <div *ngIf="s103">   
+ <table> 
+  <tr>
+  <td>CN_id</td>
+  <td>CN_name</td>
+  <td>CN_Desc</td>
+  <td>CN_Duration</td>
+  <td>CN_Image</td>
+  <td>CN_InsertDate</td>
+  <td>CO_id</td>
+  <!-- <td>EDIT</td> -->
+  </tr>  
+  <tr *ngFor="let product of tabledata104">
+    
+   <td *ngIf="product.CN_id==null;else eb"> NULL</td>
+   <ng-template #eb >{{product.CN_id}}</ng-template>
+   <td>{{product.CN_Name}}</td>
+   <td> {{product.CN_Desc}}</td>
+    <td>{{product.CN_Duration}}</td>
+    
+    <td *ngIf="product.CN_Image==null;else eb2"> NULL</td>
+    <ng-template #eb2 >{{product.CN_Image}}</ng-template> 
+
+    <td>{{product.CN_Insertdate}}</td>
+    <td>{{product.CO_id}}</td>
+
+    <!-- <button (click)="edit()">Edit</button>  -->
+    <!-- <button  (click)="delete(product)">Delete</button> -->
+ </tr>
+  
+</table>
+
+<div class="text-center">
+        <ol *ngFor="let f of tabledata103">
+          <li (click)="is106(f.CN_id)" >{{f.SC_Name}}</li>
+        </ol>
+      </div>
+    </div>
+<div *ngIf="s105">
+  <table> 
+    <tr><td>SC_id</td>
+      <td>SC_name</td>
+    <td>SC_Desc</td>
+    <td>SC_Duration</td>
+    <td>SC_Content</td>
+    <td>SC_InsertDate</td>
+    <td>CN_id</td>
+    <!-- <td>EDIT</td> -->
+    </tr>
+    
+    <tr *ngFor="let product of tabledata105">
+      
+     <td *ngIf="product.SC_id==null;else eb"> NULL</td>
+     <ng-template #eb >{{product.SC_id}}</ng-template> 
+     <td>{{product.SC_Name}}</td>
+     <td> {{product.SC_Desc}}</td>
+      <td>{{product.SC_Duration}}</td>
+      
+      <td *ngIf="product.SC_Content==null;else eb2"> NULL</td>
+      <ng-template #eb2 >{{product.SC_Content}}</ng-template> 
+  
+      <td>{{product.SC_Insertdate}}</td>
+      <td>{{product.CN_id}}</td>
+  
+      <!-- <button (click)="edit()">Edit</button> -->
+       <!-- <button  (click)="delete(product)">Delete</button> -->
+    </tr>
+    
+  </table>
+  
+</div>
+      <table *ngIf="aa">
+        <tr>
+          <td>id</td>
+          <td>name</td>
+          <td>Desc</td>
+          <td>Duration</td>
+          <td>CO_Image</td>
+          <td>CO_InsertDate</td>
+          <td>CU_id</td>
+          <td>EDIT</td>
+        </tr>
+
+        <tr *ngFor="let product of tabledata">
+
+          <td *ngIf="product.CO_id==null;else eb"> NULL</td>
+          <ng-template #eb>{{product.CO_id}}</ng-template>
+          <td>{{product.CO_Name}}</td>
+          <td> {{product.CO_Desc}}</td>
+          <td>{{product.CO_Duration}}</td>
+
+          <td *ngIf="product.CO_Image==null;else eb2"> NULL</td>
+          <ng-template #eb2>{{product.CO_Image}}</ng-template>
+
+          <td>{{product.CO_Insertdate}}</td>
+          <td>{{product.CU_id}}</td>
+
+          <!-- <button (click)="edit()">Edit</button> 
+            <button  (click)="delete(product)">Delete</button> -->
+        </tr>
+
+      </table>
+
+
+      <!-- </div> -->
+
+
+      <!-- <div class="col-md-10" >
+      <app-concept  *ngIf="appcon"></app-concept>
+      <app-courses *ngIf="appcourse"></app-courses>
+      <app-curriculum *ngIf="appcur"></app-curriculum>
+      <app-subconcept *ngIf="appsub"></app-subconcept>
+      <app-sessionplan *ngIf="appses"></app-sessionplan>  -->
+
+      <table *ngIf="bb">
+        <tr>
+          <td>CN_id</td>
+          <td>CN_name</td>
+          <td>CN_Desc</td>
+          <td>CN_Duration</td>
+          <td>CN_Image</td>
+          <td>CN_InsertDate</td>
+          <td>CO_id</td>
+          <td>EDIT</td>
+        </tr>
+
+        <tr *ngFor="let product of tbdata">
+
+          <td *ngIf="product.CN_id==null;else eb"> NULL</td>
+          <ng-template #eb>{{product.CN_id}}</ng-template>
+          <td>{{product.CN_Name}}</td>
+          <td> {{product.CN_Desc}}</td>
+          <td>{{product.CN_Duration}}</td>
+
+          <td *ngIf="product.CN_Image==null;else eb2"> NULL</td>
+          <ng-template #eb2>{{product.CN_Image}}</ng-template>
+
+          <td>{{product.CN_Insertdate}}</td>
+          <td>{{product.CO_id}}</td>
+
+          <!-- <button (click)="edit()">Edit</button> -->
+          <!-- <button  (click)="delete(product)">Delete</button> -->
+        </tr>
+
+      </table>
+      <!-- </div> -->
+
+      <!-- <div class="col-md-10" >
+        <app-concept  *ngIf="appcon"></app-concept>
+        <app-courses *ngIf="appcourse"></app-courses>
+        <app-curriculum *ngIf="appcur"></app-curriculum>
+        <app-subconcept *ngIf="appsub"></app-subconcept>
+        <app-sessionplan *ngIf="appses"></app-sessionplan> 
+     -->
+      <table *ngIf="cc">
+        <tr>
+          <td>SC_id</td>
+          <td>SC_name</td>
+          <td>SC_Desc</td>
+          <td>SC_Duration</td>
+          <td>SC_Content</td>
+          <td>SC_InsertDate</td>
+          <td>CN_id</td>
+          <td>EDIT</td>
+        </tr>
+
+        <tr *ngFor="let product of tdata">
+
+          <td *ngIf="product.SC_id==null;else eb"> NULL</td>
+          <ng-template #eb>{{product.SC_id}}</ng-template>
+          <td>{{product.SC_Name}}</td>
+          <td> {{product.SC_Desc}}</td>
+          <td>{{product.SC_Duration}}</td>
+
+          <td *ngIf="product.SC_Content==null;else eb2"> NULL</td>
+          <ng-template #eb2>{{product.SC_Content}}</ng-template>
+
+          <td>{{product.SC_Insertdate}}</td>
+          <td>{{product.CN_id}}</td>
+
+          <!-- <button (click)="edit()">Edit</button> -->
+          <!-- <button  (click)="delete(product)">Delete</button> -->
+        </tr>
+      </table>
+
+        <table *ngIf="xx">
+            <tr>
+              <td>SC_id</td>
+              <td>SC_name</td>
+              <td>SC_Desc</td>
+              <td>SC_Duration</td>
+              <td>SC_Content</td>
+              <td>SC_InsertDate</td>
+              <td>CN_id</td>
+              <td>EDIT</td>
+            </tr>
+    
+            <tr *ngFor="let product of cou3">
+    
+              <td *ngIf="product.SC_id==null;else eb"> NULL</td>
+              <ng-template #eb>{{product.SC_id}}</ng-template>
+              <td>{{product.SC_Name}}</td>
+              <td> {{product.SC_Desc}}</td>
+              <td>{{product.SC_Duration}}</td>
+    
+              <td *ngIf="product.SC_Content==null;else eb2"> NULL</td>
+              <ng-template #eb2>{{product.SC_Content}}</ng-template>
+    
+              <td>{{product.SC_Insertdate}}</td>
+              <td>{{product.CN_id}}</td>
+    
+              <!-- <button (click)="edit()">Edit</button> -->
+              <!-- <button  (click)="delete(product)">Delete</button> -->
+            </tr>
+            
+
+      </table>
+      <!-- <div class="alert alert-info clearfix">
+      <div class="row">
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="w-100"></div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+        </div>
+    </div>
+     -->
+     
+
+    <!-- </div> -->
+  </div>
+</div>
+
+
+

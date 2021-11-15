@@ -1,0 +1,88 @@
+<!-- <p>
+  sessionplan works!
+</p> -->
+<!-- <p>
+  curriculum works!
+</p> -->
+<form #g="ngForm">
+    <p>
+      <label>SP_ID</label>
+      <input type="text" [(ngModel)]="SP.SP_id" required name="SP_id">
+    </p>
+    <p>
+      <label>SP_Sequence</label>
+       <input type="text" [(ngModel)]="SP.SP_Sequence" required name="SP_Sequence">
+    </p>
+    <p>
+      <label>SP_Duration </label>
+      <input type="text" [(ngModel)]="SP.SP_Duration" required name="SP_Duration">
+    </p>
+    <p>
+      <label>RB_id </label>
+      <input type="text" [(ngModel)]="SP.RB_id" name="RB_id">
+    </p>
+    <p>
+      <label>OC_id </label>
+      <input type="text" [(ngModel)]="SP.OC_id" name="OC_id">
+    </p>
+    <p>
+      <button type="submit" (click)="Insert()">Submit</button>
+    </p>
+  </form>
+  <table> 
+    <tr>
+    <td>id</td>
+    <td>sequence</td>
+    <td>Duration</td>
+    
+    <td>RB_id</td>
+    <td>OC_id</td>
+    
+    </tr>
+    
+    <tr *ngFor="let value of tabledata">
+      
+     <td *ngIf="value.SP_id==null;else eb"> NULL</td>
+     <ng-template #eb >{{value.SP_id}}</ng-template> 
+     <td>{{value.SP_Sequence}}</td>
+     <td> {{value.SP_Duration}}</td>
+      
+      
+      <td *ngIf="value.RB_id==null;else eb2"> NULL</td>
+      <ng-template #eb2 >{{value.RB_id}}</ng-template> 
+  
+      <td>{{value.OC_id}}</td>
+  
+      <button (click)="edit()">Edit</button>
+      <button  (click)="delete(value)">Delete</button>
+    </tr>
+    
+  </table>
+  <ng-container *ngIf="is5">
+  
+      <form #g="ngForm">
+          <p>
+            <label>SP_ID</label>
+            <input type="text" [(ngModel)]="SP_update.SP_id" required name="SP_update_id">
+          </p>
+          <p>
+            <label>SP_Sequence</label>
+             <input type="text" [(ngModel)]="SP_update.SP_Sequence" required name="SP_update_Sequence">
+          </p>
+          <p>
+            <label>SP_Duration </label>
+            <input type="text" [(ngModel)]="SP_update.SP_Duration" required name="SP_update_Duration">
+          </p>
+          <p>
+            <label>RB_id </label>
+            <input type="text" [(ngModel)]="SP_update.RB_id" name="SP_update_id">
+          </p>
+          <p>
+            <label>OC_id </label>
+            <input type="text" [(ngModel)]="SP_update.OC_id" name="SP_update_id">
+          </p>
+          <p>
+            <button type="button" (click)="update()">Submit</button>
+          </p>
+        </form>
+    </ng-container>

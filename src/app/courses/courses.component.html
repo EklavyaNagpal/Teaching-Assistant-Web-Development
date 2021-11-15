@@ -1,0 +1,142 @@
+<!-- <p>
+  courses works!
+</p> -->
+<!-- <div class="dropdown">
+        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Curriculum
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+          <a class="dropdown-item" >Curriculum Details</a>
+          <div *ngFor="let id of prod">
+            <a class="dropdown-item" (click)="is12(id.CU_id)">{{id.CU_id}}</a>
+            &nbsp;&nbsp;
+            <a class="dropdown-item">{{id.CU_Name}}</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div> -->
+
+<div class = "text-center">
+          <div class="dropdown">
+            <button class="btn btn-primary btn-lg btn-xs-block " type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Curriculum
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    
+              <!-- <a class="dropdown-item">Curriculum Details</a> -->
+              <div *ngFor="let value of prod">
+                <!-- <a class="dropdown-item" (click)="is12(id.CU_id)" >{{id.CU_id}}</a>
+                      &nbsp;&nbsp; -->
+                <a class="dropdown-item" (click)="aloo(value.CU_id)">{{value.CU_Name}}</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+<!-- <form #f="ngForm" class="text-center"> -->
+    <!-- <div class = "text-center"> -->
+  <table>
+  <tr>
+      <td>CO_ID:-</td>
+      <input type="text" [(ngModel)]="CO.CO_id" required name="CO_id">
+  </tr>
+    <tr>
+      <td>CO_Name:-</td>
+       <input type="text" [(ngModel)]="CO.CO_Name" required name="CO_Name">
+    </tr>
+    <tr>
+      <td>CO_Desc:-</td>
+      <input type="text" [(ngModel)]="CO.CO_Desc" required name="CO_Desc">
+    </tr>
+    <tr>
+      <td>CO_Duration: </td>
+      <input type="text" [(ngModel)]="CO.CO_Duration" name="CO_Duration">
+    </tr>
+    <tr>
+      <td>CO_Image:-</td>
+      <input type="text" [(ngModel)]="CO.CO_Image" name="CO_Image">
+    </tr>
+    <tr>
+      <td>CU_id:-</td>
+      <input type="text" [(ngModel)]="CO.CU_id" name="CU_id">
+    </tr>
+    <tr>
+      <td>CO_InsertDate: </td>
+      <input type="text" [(ngModel)]="CO.CO_InsertDate" name="CO_InsertDate">
+    </tr>
+  </table>
+  <p>
+      <button type="submit" (click)="Insert()">Submit</button>
+    </p>
+    <!-- </div>
+  </form> -->
+
+  <!-- <table> 
+    <tr><td>id</td><td>name</td>
+    <td>Desc</td>
+    <td>Duration</td>
+    <td>CO_Image</td>
+    <td>CO_InsertDate</td>
+    <td>CU_id</td>
+    <td>EDIT</td>
+    </tr>
+    
+    <tr *ngFor="let product of tabledata">
+      
+     <td *ngIf="product.CO_id==null;else eb"> NULL</td>
+     <ng-template #eb >{{product.CO_id}}</ng-template> 
+     <td>{{product.CO_Name}}</td>
+     <td> {{product.CO_Desc}}</td>
+      <td>{{product.CO_Duration}}</td>
+      
+      <td *ngIf="product.CO_Image==null;else eb2"> NULL</td>
+      <ng-template #eb2 >{{product.CO_Image}}</ng-template> 
+  
+      <td>{{product.CO_Insertdate}}</td>
+      <td>{{product.CU_id}}</td>
+  
+      <button (click)="edit()">Edit</button> -->
+      <!-- <button  (click)="delete(product)">Delete</button> -->
+    <!-- </tr>
+    
+  </table>
+  <ng-container *ngIf="is2">
+  
+      <form #f="ngForm">
+          <p>
+            <label>CO_ID:- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" [(ngModel)]="CO_update.CO_id" required name="CO_update_id">
+          </p>
+          <p>
+            <label>CO_Name:- &nbsp;&nbsp;&nbsp;</label>
+             <input type="text" [(ngModel)]="CO_update.CO_Name" required name="CO_update_Name">
+          </p>
+          <p>
+            <label>CO_Desc:- &nbsp;&nbsp;&nbsp;&nbsp; </label>
+            <input type="text" [(ngModel)]="CO_update.CO_Desc" required name="CO_update_Desc">
+          </p>
+          <p>
+            <label>CO_Duration: </label>
+            <input type="text" [(ngModel)]="CO_update.CO_Duration" name="CO_update_Duration">
+          </p>
+          <p>
+            <label>CO_Image:- &nbsp;&nbsp;&nbsp;&nbsp; </label>
+            <input type="text" [(ngModel)]="CO_update.CO_Image" name="CO_update_Image">
+          </p>
+          <p>
+            <label>CU_id:- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </label>
+            <input type="text" [(ngModel)]="CO_update.CU_id" name="CO_update_id">
+          </p>
+          <p>
+            <label>CO_InsertDate: </label>
+            <input type="text" [(ngModel)]="CO_update.CO_InsertDate" name="CO_update_InsertDate">
+          </p>
+          <p>
+            <button type="button" (click)="update()">Submit</button>
+          </p>
+        </form>
+    </ng-container> -->

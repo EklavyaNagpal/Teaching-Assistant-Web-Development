@@ -1,0 +1,102 @@
+<!-- <p>
+  curriculum works!
+</p> -->
+<!-- <div > -->
+    <!-- <span > -->
+ <table >
+  <tr>
+    <td>CU_ID:- </td>
+    <input type="text" [(ngModel)]="CU.CU_id" required name="CU_id">
+</tr>
+  <tr>
+    <td>CU_Name:-</td>
+     <input type="text" [(ngModel)]="CU.CU_Name" required name="CU_Name">
+  </tr>
+  <tr>
+    <td>CU_Desc:-</td>
+    <input type="text" [(ngModel)]="CU.CU_Desc" required name="CU_Desc">
+  </tr>
+  <!-- <p>
+    <label>CN_Duration </label>
+    <input type="text" [(ngModel)]="CN.CN_Duration" name="CN_Duration">
+  </p> -->
+  <tr>
+    <td>CU_Image:-</td>
+    <input type="text" [(ngModel)]="CU.CU_Image" name="CU_Image">
+  </tr>
+  <!-- <p>
+    <label>CO_id
+    </label>
+    <input type="text" [(ngModel)]="CN.CO_id" name="CO_id">
+  </p> -->
+  <tr>
+    <td>CU_InsertDate: </td>
+    <input type="text" [(ngModel)]="CU.CU_InsertDate" name="CU_InsertDate">
+  </tr>
+</table>
+  <p>
+    <button type="submit" (click)="Insert()">Submit</button>
+  </p>
+<!-- </span> -->
+
+<!-- <table> 
+  <tr>
+  <td>id</td>
+  <td>name</td>
+  <td>Desc</td>
+  
+  <td>CN_Image</td>
+  <td>CN_InsertDate</td>
+  <td>EDIT</td>
+  
+  </tr>
+  
+  <tr *ngFor="let value of tabledata">
+    
+   <td *ngIf="value.CU_id==null;else eb"> NULL</td>
+   <ng-template #eb >{{value.CU_id}}</ng-template> 
+   <td>{{value.CU_Name}}</td>
+   <td> {{value.CU_Desc}}</td>
+    
+    
+    <td *ngIf="value.CU_Image==null;else eb2"> NULL</td>
+    <ng-template #eb2 >{{value.CU_Image}}</ng-template> 
+
+    <td>{{value.CU_Insertdate}}</td>
+
+    <td><button (click)="edit()">Edit</button> </td>  -->
+    <!-- <button  (click)="delete(value)">Delete</button> -->
+  <!-- </tr>
+
+</table>
+
+  
+
+<ng-container *ngIf="is3">
+
+    <form #g="ngForm">
+        <p>
+          <label>CU_ID:- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" [(ngModel)]="CU_update.CU_id" required name="CU_update_id">
+        </p>
+        <p>
+          <label>CU_Name:- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+           <input type="text" [(ngModel)]="CU_update.CU_Name" required name="CU_update_Name">
+        </p>
+        <p>
+          <label>CU_Desc:- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+          <input type="text" [(ngModel)]="CU_update.CU_Desc" required name="CU_update_Desc">
+        </p>
+        <p>
+          <label>CU_Image:- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+          <input type="text" [(ngModel)]="CU_update.CU_Image" name="CU_update_Image">
+        </p>
+        <p>
+          <label>CU_InsertDate: </label>
+          <input type="text" [(ngModel)]="CU_update.CU_InsertDate" name="CU_update_InsertDate">
+        </p>
+        <p>
+          <button type="button" (click)="update()">Submit</button>
+        </p>
+      </form>
+  </ng-container> -->

@@ -1,0 +1,8 @@
+table, th, td {
+    border: 1px solid black;
+  }
+
+  .btn-xs-block {
+    display: block;
+    width: 83%;
+}

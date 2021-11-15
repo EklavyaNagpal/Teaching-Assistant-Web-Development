@@ -1,0 +1,135 @@
+<div class="text-center">
+<div class="dropdown">
+  <button class="btn btn-primary btn-lg btn-xs-block " type="button" id="dropdownMenuButton" data-toggle="dropdown"
+    aria-haspopup="true" aria-expanded="false">
+    Curriculum
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+    <div *ngFor="let value of prod">
+      <a class="dropdown-item" (click)="aloo(value.CU_id)">{{value.CU_Name}}</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+  </div>
+</div>
+
+<div class="dropdown">
+        <button class="btn btn-danger btn-lg btn-xs-block " type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Courses
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <div *ngFor="let idd of tabledata">
+            <a class="dropdown-item" >{{idd.CO_id}}</a>
+             &nbsp;&nbsp;
+            <a class="dropdown-item"  (click)="is123(idd.CO_id)">{{idd.CO_Name}}</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+      </div> 
+    
+    </div>
+     
+<!-- <form #f="ngForm"> -->
+  <table>
+  <tr>
+    <td>CN_ID</td>
+    <input type="text" [(ngModel)]="CN.CN_id" required name="CN_id">
+  </tr>
+  <tr>
+    <td>CN_Name</td>
+     <input type="text" [(ngModel)]="CN.CN_Name" required name="CN_Name">
+  </tr>
+  <tr>
+    <td>CN_Desc </td>
+    <input type="text" [(ngModel)]="CN.CN_Desc" required name="CN_Desc">
+  </tr>
+  <tr>
+    <td>CN_Duration </td>
+    <input type="text" [(ngModel)]="CN.CN_Duration" name="CN_Duration">
+  </tr>
+  <tr>
+    <td>CN_Image </td>
+    <input type="text" [(ngModel)]="CN.CN_Image" name="CN_Image">
+  </tr>
+  <tr>
+    <td>CO_id</td>
+    <input type="text" [(ngModel)]="CN.CO_id" name="CO_id">
+  </tr>
+  <tr>
+    <td>CN_InsertDate </td>
+    <input type="text" [(ngModel)]="CN.CN_InsertDate" name="CN_InsertDate">
+  </tr>
+</table>
+  <p>
+    <button type="submit" (click)="Insert()">Submit</button>
+  </p>
+<!-- </form> -->
+
+<!-- <table> 
+  <tr><td>CN_id</td>
+  <td>CN_name</td>
+  <td>CN_Desc</td>
+  <td>CN_Duration</td>
+  <td>CN_Image</td>
+  <td>CN_InsertDate</td>
+  <td>CO_id</td>
+  <td>EDIT</td>
+  </tr>
+  
+  <tr *ngFor="let product of tabledata">
+    
+   <td *ngIf="product.CN_id==null;else eb"> NULL</td>
+   <ng-template #eb >{{product.CN_id}}</ng-template> 
+   <td>{{product.CN_Name}}</td>
+   <td> {{product.CN_Desc}}</td>
+    <td>{{product.CN_Duration}}</td>
+    
+    <td *ngIf="product.CN_Image==null;else eb2"> NULL</td>
+    <ng-template #eb2 >{{product.CN_Image}}</ng-template> 
+
+    <td>{{product.CN_Insertdate}}</td>
+    <td>{{product.CO_id}}</td>
+
+    <button (click)="edit()">Edit</button> -->
+    <!-- <button  (click)="delete(product)">Delete</button> -->
+  <!-- </tr>
+  
+</table>
+<ng-container *ngIf="is1">
+
+    <form #f="ngForm">
+        <p>
+          <label>CN_ID</label>
+          <input type="text" [(ngModel)]="CN_update.CN_id" required name="CN_update_id">
+        </p>
+        <p>
+          <label>CN_Name</label>
+           <input type="text" [(ngModel)]="CN_update.CN_Name" required name="CN_update_Name">
+        </p>
+        <p>
+          <label>CN_Desc </label>
+          <input type="text" [(ngModel)]="CN_update.CN_Desc" required name="CN_update_Desc">
+        </p>
+        <p>
+          <label>CN_Duration </label>
+          <input type="text" [(ngModel)]="CN_update.CN_Duration" name="CN_update_Duration">
+        </p>
+        <p>
+          <label>CN_Image </label>
+          <input type="text" [(ngModel)]="CN_update.CN_Image" name="CN_update_Image">
+        </p>
+        <p>
+          <label>CO_id
+          </label>
+          <input type="text" [(ngModel)]="CN_update.CO_id" name="CO_update_id">
+        </p>
+        <p>
+          <label>CN_InsertDate </label>
+          <input type="text" [(ngModel)]="CN_update.CN_InsertDate" name="CN_update_InsertDate">
+        </p>
+        <p>
+          <button type="button" (click)="update()">Submit</button>
+        </p>
+      </form>
+  </ng-container> -->

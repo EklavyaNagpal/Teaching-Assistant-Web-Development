@@ -1,0 +1,60 @@
+button {
+  width:221px;
+  height:87px;
+  text-align: center;
+  display: block;
+  margin-left:-14px;
+  
+}
+
+.verticalLine {
+  border-right: thick solid #000000;
+  
+}
+.container{
+ /* background-color: blue; */
+ width: 100%;
+}
+.text-center{
+  font-size: 35px;
+  font-style: italic;
+  text-decoration: underline;
+  position: relative; 
+   top: -3px; 
+   left: -3px; 
+   text-shadow: 1px 1px #fe4902, 
+                2px 2px #fe4902, 
+                3px 3px #fe4902, 
+                4px 4px #fe4902, 
+                5px 5px #fe4902, 
+                6px 6px #fe4902;
+}
+.text-center:hover{
+  text-shadow: 1px 1px #fe8802, 
+                2px 2px #fe9902, 
+                3px 3px #fe8802, 
+                4px 4px #fe8802, 
+                5px 5px #fe9102, 
+                6px 6px #d19b08;
+  
+}
+
+
+/* app-concept{
+  float:right
+}  */
+
+/* button {
+    width: 30%;
+    margin: 2px;
+    text-align: center;
+  } */
+  table, th, td {
+    border: 1px solid black;
+  }
+
+
+  .mt-0 {
+    margin-top: 0 !important;
+  }
+  
